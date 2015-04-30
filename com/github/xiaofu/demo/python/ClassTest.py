@@ -3,6 +3,7 @@
 
 @author: fulaihua
 '''
+nick="ad"
 class A(object):  
     def tell(self):  
         print 'A tell'  
