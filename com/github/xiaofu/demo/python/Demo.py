@@ -1,18 +1,12 @@
-#encoding=gb18030
+#encoding=utf-8
 #@author: fulaihua
-import sys,time,os
+import sys,time,os,ClassTest
 reload(sys)
-sys.setdefaultencoding("gb18030")
-def task():
-    print "ok"
-def main():
-    while True:
-        task()
-        time.sleep(5)
-fileName=r"E:\VIP\spider\dataCrawler\QkParser1.0\QkParser1.0\output\20141428910804\tosqlserver.bat"
-try:
-    os.system(fileName)
-except Exception,e:
-    print e
+sys.setdefaultencoding("utf-8")
+path=os.path.join(u"D:\win7 64位系统")
+print repr(path)
+a=os.listdir(path.decode("utf-8"))
+print a
+print ClassTest.nick
 if __name__ == '__main__':
     pass
